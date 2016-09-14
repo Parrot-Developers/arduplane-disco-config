@@ -16,6 +16,7 @@ if [ "$1" = "update" ]; then
         ${drone_address}::root/ \
         --exclude-from=./config/rsync_exclude
     adb shell chmod 640 '/etc/boxinit.d/*.rc'
+    adb shell sync
     exit 0
 fi
 
