@@ -1,0 +1,3 @@
+service rsync /usr/bin/rsync --daemon --config /etc/rsyncd.conf
+	class main
+
