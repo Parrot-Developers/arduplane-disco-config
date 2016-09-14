@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -n "$(which ccache)" ]; then
+    export ALCHEMY_USE_CCACHE=1
+fi
+
 export ALCHEMY_WORKSPACE_DIR=$(pwd)
 export ALCHEMY_HOME=alchemy
 if [ -z $ALCHEMY_USE_COLORS ]
