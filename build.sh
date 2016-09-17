@@ -5,6 +5,7 @@ set -e
 if [ "$1" = "update" ]; then
     echo "updating filesystem"
     drone_address=${DRONE_ADDRESS:-192.168.42.1}
+    adb remount
     rsync \
         --partial --progress \
         --archive \
