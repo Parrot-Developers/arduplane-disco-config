@@ -1,3 +1,0 @@
-service rsync /usr/bin/rsync --daemon --no-detach --config /etc/rsyncd.conf
-	class main
-
